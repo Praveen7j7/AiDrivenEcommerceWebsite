@@ -1,6 +1,6 @@
 import React from 'react'
 import { createContext } from 'react'
-export const AuthDataContext= createContext()
+export const authDataContext= createContext()
 function AuthContext({children}) {
     let serverUrl = "https://aidrivenecommercewebsite.onrender.com/"
     // https://aidrivenecommercewebsite.onrender.com/ ||http://localhost:8000
@@ -10,9 +10,9 @@ function AuthContext({children}) {
     }
   return (
         <>
-         <AuthDataContext.Provider value={value}>
+         <authDataContext.Provider value={value}>
             {children}
-        </AuthDataContext.Provider>
+        </authDataContext.Provider>
         
         </>
        
