@@ -72,9 +72,9 @@ export const getUserCart = async (req,res) => {
            if (!userData) {
     return res.status(404).json({ message: "User not found" });
   }
-        //  let cartData = await userData.cartData;
+         let cartData = await userData.cartData;
 
-      const cartData=userData.cartData || []; //fallback if cartData is undefined 
+      // const cartData=userData.cartData || []; //fallback if cartData is undefined 
     return res.status(200).json(cartData)
 
 

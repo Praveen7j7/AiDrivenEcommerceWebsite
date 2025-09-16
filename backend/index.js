@@ -28,7 +28,9 @@ app.use("/api/cart",cartRoutes)
 app.use("/api/order",orderRoutes)
 
 
-
+app.get('/', (req, res) => {
+  res.send('Backend is Running Continue with the Production!! ')
+})
 
 app.listen(port,()=>{
     console.log("Hello From Server")
