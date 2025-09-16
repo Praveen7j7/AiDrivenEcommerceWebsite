@@ -1,6 +1,6 @@
 import React, { createContext } from 'react'
 
-export const authDataContext = createContext()
+export const authDataContext = createContext() //Named Export 
 function AuthContext({children}) {
     let serverUrl = "http://localhost:8000"
 
@@ -17,4 +17,4 @@ function AuthContext({children}) {
   )
 }
 
-export default AuthContext
+export default AuthContext //Default Export
