@@ -26,6 +26,10 @@ function Nav() {
             console.log(result.data)
            
             navigate("/login")
+              // Force cookie state re-check
+                window.location.href = "/login";  
+             // OR
+                // window.location.reload();
         } catch (error) {
             console.log(error)
         }
