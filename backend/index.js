@@ -17,7 +17,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
- origin:["http://localhost:5173" , "http://localhost:5174","https://ai-driven-ecommerce-website.vercel.app/","https://vercel.com/praveen7j7s-projects/ai-driven-ecommerce-website-5pke"],
+ origin:["http://localhost:5173" , "http://localhost:5174","https://ai-driven-ecommerce-website.vercel.app","https://vercel.com/praveen7j7s-projects/ai-driven-ecommerce-website-5pke"],
  credentials:true
 }))
 
