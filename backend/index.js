@@ -10,7 +10,7 @@ import productRoutes from './routes/productRoutes.js'
 import cartRoutes from './routes/cartRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 
-let port = process.env.PORT || 8000 ||6000
+let port = process.env.PORT || 8000;
 
 let app = express()
 

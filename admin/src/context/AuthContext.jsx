@@ -2,7 +2,7 @@ import React, { createContext } from 'react'
 
 export const authDataContext = createContext() //Named Export 
 function AuthContext({children}) {
-    let serverUrl = "https://aidrivenecommercewebsite.onrender.com/"
+    let serverUrl = "https://aidrivenecommercewebsite.onrender.com"
     // "http://localhost:8000"
 
     let value = {
