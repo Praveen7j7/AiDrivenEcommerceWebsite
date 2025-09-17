@@ -14,12 +14,16 @@ let port = process.env.PORT || 8000;
 
 let app = express()
 
-app.use(express.json())
-app.use(cookieParser())
 app.use(cors({
- origin:["http://localhost:5173" , "http://localhost:5174","https://ai-driven-ecommerce-website.vercel.app","https://vercel.com/praveen7j7s-projects/ai-driven-ecommerce-website-5pke"],
+ origin:["http://localhost:5173" ,
+   "http://localhost:5174",
+   "https://ai-driven-ecommerce-website.vercel.app",
+   "https://ai-driven-ecommerce-website-5pke.vercel.app"],
  credentials:true
 }))
+app.use(express.json())
+app.use(cookieParser())
+
 
 app.use("/api/auth",authRoutes)
 app.use("/api/user",userRoutes)
